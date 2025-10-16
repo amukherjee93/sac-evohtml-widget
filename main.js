@@ -17,19 +17,20 @@ class VerticalText extends HTMLElement {
 
   render() {
     const text = this.getAttribute('text') || 'VERTICAL';
-    const formattedText = text.split('').join('<br>');
+
     this.shadowRoot.innerHTML = `
       <style>
-        .vertical-text {
+        .rotated-text {
+          display: inline-block;
+          transform: rotate(-90deg);
+          transform-origin: left top;
           font-family: Arial, sans-serif;
           font-size: 16px;
           color: #333;
-          line-height: 1.2;
-          text-align: center;
-          white-space: pre;
+          white-space: nowrap;
         }
       </style>
-      <div class="vertical-text">${formattedText}</div>
+      <div class="rotated-text">${text}</div>
     `;
   }
 }
