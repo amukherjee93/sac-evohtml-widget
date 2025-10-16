@@ -1,0 +1,17 @@
+{
+	"id": "com.custom.evohtml",
+	"name": "EvoHTML",
+	"description": "Custom HTML rendering widget with rotated text",
+	"vendor": "YourCompany",
+	"version": "1.0.0",
+	"customWidget": {
+		"js": [
+			"evohtml.js"
+		],
+		"css": [],
+		"icon": "icon.png",
+		"properties": {},
+		"events": {},
+		"methods: {},
+	}	
+}	
