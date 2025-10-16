@@ -16,7 +16,7 @@ class VerticalText extends HTMLElement {
   }
 
   render() {
-    const text = this.getAttribute('text') || 'VERTICAL';
+    const text = this.getAttribute('text') || 'VERTICALLL';
 
     this.shadowRoot.innerHTML = `
       <style>
@@ -36,3 +36,4 @@ class VerticalText extends HTMLElement {
 }
 
 customElements.define('vertical-text', VerticalText);
+
